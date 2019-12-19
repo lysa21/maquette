@@ -1,0 +1,252 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; }
+
+body > section {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 3rem; }
+
+.mep {
+  padding: 0 7%; }
+
+#header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../assets/mastehead.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 54% 50%;
+  color: #ffffff;
+  min-height: 100%;
+  margin-top: 0; }
+  #header .header-logo {
+    display: flex;
+    padding: 0.8rem; }
+    #header .header-logo .take {
+      display: flex;
+      margin-left: 0.5rem;
+      align-self: center;
+      font-style: italic;
+      font-size: 1.7em;
+      font-weight: 500; }
+  #header .header-title {
+    display: flex;
+    flex-direction: column;
+    height: 72%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 60%; }
+    #header .header-title h1 {
+      font-size: 2.5em;
+      font-weight: 500; }
+    #header .header-title div {
+      font-size: 0.7em; }
+
+#start {
+  display: flex;
+  flex-direction: column; }
+  #start .block {
+    padding: 1rem;
+    width: 50%; }
+    #start .block:last-of-type {
+      align-self: center; }
+
+/* Portrait and Landscape */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #start {
+    flex-direction: row; } }
+@media screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 1) {
+  #start {
+    flex-direction: row; } }
+#block-color {
+  display: flex;
+  flex-direction: column; }
+  #block-color .color {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    color: #fff; }
+  #block-color .b1 {
+    background-color: #F4989D; }
+  #block-color .b2 {
+    background-color: #605F7A; }
+  #block-color .b3 {
+    background: url("./../assets/box-bg.jpg") no-repeat;
+    background-size: cover; }
+  #block-color .b4 {
+    background: url("./../assets/box-bg-lg.jpg") no-repeat;
+    background-size: cover; }
+  #block-color .b5 {
+    background-color: #82CA9C; }
+
+/* Portrait and Landscape */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #block-color {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+    #block-color .color {
+      width: 50%; }
+    #block-color .b5 {
+      background-color: #82CA9C;
+      width: 100%; } }
+@media screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 1) {
+  #block-color .color {
+    width: 33.3%; }
+  #block-color .b4 {
+    background-color: #82CA9C;
+    width: 66.6%; } }
+#details {
+  display: flex;
+  flex-direction: column; }
+
+/* Portrait and Landscape */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #details {
+    display: flex;
+    flex-direction: column; }
+    #details .severals {
+      display: flex;
+      flex-wrap: wrap; }
+      #details .severals div {
+        width: 50%;
+        padding: 1rem; } }
+@media screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 1) {
+  #details .severals div {
+    width: 25%; } }
+#options {
+  display: flex;
+  min-height: 100%;
+  background: url("./../assets/full-image.jpg") no-repeat 15%;
+  background-size: cover;
+  color: #fff; }
+
+#reasons {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #82CA9C;
+  padding-top: 10%;
+  padding-bottom: 10%; }
+  #reasons .reasons {
+    display: flex;
+    flex-direction: column; }
+
+/* Portrait and Landscape */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #reasons .reasons {
+    flex-direction: row; }
+    #reasons .reasons .reason {
+      margin: 1rem; } }
+#plan {
+  display: flex;
+  flex-direction: column; }
+  #plan .buy {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; }
+
+/* Portrait and Landscape */
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #plan {
+    display: flex;
+    flex-direction: row; }
+    #plan .buy {
+      flex-direction: row; } }
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #182432;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 3rem; }
+  #footer .sitemap {
+    display: flex;
+    justify-content: space-between; }
+  #footer input {
+    width: 100%; }
+
+@media screen and (min-width: 1200px) and (-webkit-device-pixel-ratio: 1) {
+  #footer .touch {
+    display: flex; }
+    #footer .touch div {
+      width: 50%;
+      margin-right: 1rem; } }
+ul, li {
+  list-style: none;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

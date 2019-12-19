@@ -1,0 +1,15 @@
+@import '_reset';
+@import '_base';
+@import '_header';
+@import '_start';
+@import '_block-color';
+@import '_details';
+@import '_options';
+@import '_reasons';
+@import '_plan';
+@import '_footer';
+
+ul, li {
+    list-style: none;
+    padding: 0;
+}

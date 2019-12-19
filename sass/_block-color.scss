@@ -1,0 +1,63 @@
+#block-color {
+    display: flex;
+    flex-direction: column;
+    .color {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        color: #fff;
+    }
+    .b1 {
+        background-color: #F4989D;
+    }
+    .b2 {
+        background-color: #605F7A;
+    }
+    .b3 {
+        background: url('./../assets/box-bg.jpg') no-repeat;
+        background-size: cover;
+    }
+    .b4 {
+        background: url('./../assets/box-bg-lg.jpg') no-repeat;
+        background-size: cover;
+
+    }
+    .b5 {
+        background-color: #82CA9C;
+    }
+}
+
+/* Portrait and Landscape */
+@media screen 
+  and (min-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #block-color{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        .color {
+            width: 50%;
+            
+        }
+        .b5 {
+            background-color: #82CA9C;
+            width: 100%;
+        }
+    }
+}
+
+@media screen 
+  and (min-width: 1200px) 
+  and (-webkit-device-pixel-ratio: 1) { 
+    #block-color{
+        .color {
+            width: 33.3%;
+            
+        }
+        .b4 {
+            background-color: #82CA9C;
+            width: 66.6%;
+        }
+    }
+}

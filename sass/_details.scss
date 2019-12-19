@@ -1,0 +1,35 @@
+#details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Portrait and Landscape */
+@media screen 
+  and (min-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #details {
+        display: flex;
+        flex-direction: column;
+        .severals {
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                width: 50%;
+                padding: 1rem;
+            }
+        }
+    }
+    
+}
+
+@media screen 
+  and (min-width: 1200px) 
+  and (-webkit-device-pixel-ratio: 1) { 
+    #details {
+        .severals {
+            div {
+                width: 25%;
+            }
+        }
+    }
+}
